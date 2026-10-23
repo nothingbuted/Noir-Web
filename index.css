@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #e8e8e8;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0 4vw;
+    /*subtle texture so it doesn't look flat AI*/
+    background-image: radial-gradient(rgba(255,255,255,0.0203) 1px transparent 1px);
+    background-size: 24px 24px;
+}
+    .mono{
+    font-family:'JetBrains Mono', monnospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: 888;
+    text-transform: uppercase;
+}
+
+/*nav*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #1a1a1a;
+}
+.logo{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -1px;
+}
+.nav-links a{
+    color: #888;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+}
+.nav-links a:hover{
+    color: #fff;
+}
+.btn-small{
+    border: 1px solid #222;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+*/hero*/
+.hero{
+    padding: 80px 0 60px 0;
+}
+.hero h1{
+    font-size: 7vw;
+    line-height: 0.9;
+    margin: 20px 0 40px;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+.outline{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.hero-bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.desc{
+    max-width: 340px;
+    color: #999;
+    line-height: 1.6;
+    font-size: 15px;
+}
+.btn-big{
+    background: #D6FF57;
+    color: #000;
+    text-decoration: none;
+    padding: 18px 30px;
+    border-radius: 30px;
+    height: fit-content;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*cards - this is the main part*/
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 16px;
+    margin-top: 30 px;
+}
+.card{
+    background: #111;
+    border: 1px solid #1e1e1e;
+    padding: 28px;
+    border-radius: 18px;
+}
+.card h3{
+    font-family: 'JetBrains Mono', monospace;
+    color: #D6FF57;
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+.card h2{
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+.card p{
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.card-2{
+    background: #151515;
+    transform: rotate(-0.5deg); /* slight human torch */
+}
+.tag{
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px solid #333;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
